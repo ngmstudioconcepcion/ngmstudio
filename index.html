@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NGM Studio | Peluquería en Concepción</title>
+  <meta name="description" content="NGM Studio en Concepción. Coloración, tratamientos, cortes y barbería. Reserva por WhatsApp." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div id="inicio"></div>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>📍 Concepción, Chile</span>
+      <span class="topbar__sep">•</span>
+      <a class="topbar__link" href="#contacto">Reserva por WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="NGM Studio Inicio">
+        <div class="brand">
+          <img src="img/logo.jpg" alt="NGM Studio Logo" class="brand__logo">
+          <span class="brand__name">NGM</span>
+          <span class="brand__studio">Studio</span>
+        </div>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#precios">Precios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#destacado">Experiencia destacada</a>
+        <a href="#sobre">Sobre NGM Studio</a>
+        <a href="#resenas">Reseñas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="btn btn--primary header__cta"
+         href="https://wa.me/56994725308?text=Hola%20NGM%20Studio%2C%20quiero%20reservar%20una%20hora"
+         target="_blank" rel="noopener">
+        Reservar
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="pill">✨ Peluquería & Barbería</p>
+        <h1>Estilo, color y cuidado profesional en <span class="accent">Concepción</span>.</h1>
+        <p class="hero__lead">
+          Balayage, coloración, tratamientos capilares, cortes y barbería.
+          Reserva fácil por WhatsApp.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary"
+             href="https://wa.me/56994725308?text=Hola%20NGM%20Studio%2C%20quiero%20reservar%20una%20hora"
+             target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn--ghost"
+             href="https://www.instagram.com/ngm.studio.concepcion/"
+             target="_blank" rel="noopener">Instagram</a>
+        </div>
+
+        <div class="hero__meta">
+          <div class="metaCard">
+            <strong>Atención</strong>
+            <span>Con reserva</span>
+          </div>
+          <div class="metaCard">
+            <strong>Peinado incluido</strong>
+            <span>Brushing / ondas / liso</span>
+          </div>
+          <div class="metaCard">
+            <strong>Contacto</strong>
+            <span>+56 9 9472 5308</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="photo">
+          <div class="photo__badge">NGM Studio</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section__head">
+        <h2>Servicios</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Tratamientos</h3>
+          <p>Alisado, botox capilar y cuidados para recuperar brillo y suavidad.</p>
+          <a class="card__link" href="#precios">Ver precios →</a>
+        </article>
+
+        <article class="card">
+          <h3>Cortes</h3>
+          <p>Corte de puntas, corte elaborado y asesoría según tu estilo.</p>
+          <a class="card__link" href="#precios">Ver precios →</a>
+        </article>
+
+        <article class="card">
+          <h3>Barbería</h3>
+          <p>Corte y barba. Perfilado y terminaciones prolijas.</p>
+          <a class="card__link" href="#precios">Ver precios →</a>
+        </article>
+
+        <article class="card">
+          <h3>Coloración</h3>
+          <p>Color completo, canas, baño de color, babylights, highlights y más.</p>
+          <a class="card__link" href="#precios">Ver precios →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Precios -->
+  <section class="section section--paper" id="precios">
+    <div class="container">
+      <div class="section__head">
+        <h2>Precios</h2>
+        <p class="muted">Valores desde. (Podemos ajustar según largo/volumen.)</p>
+      </div>
+
+      <div class="menuGrid">
+        <!-- Tratamientos -->
+        <div class="menuBlock">
+          <h3 class="menuBlock__title">Tratamientos</h3>
+          <ul class="menuList">
+            <li class="menuItem">
+              <span class="menuItem__name">Perfect Balayage</span>
+              <span class="menuItem__dots" aria-hidden="true"></span>
+              <span class="menuItem__price">$35.000</span>
+            </li>
+            <li class="menuItem">
+              <span class="menuItem__name">Alisado Coffee Premium <em class="muted">desde</em></span>
+              <span class="menuItem__dots" aria-hidden="true"></span>
+              <span class="menuItem__price">$50.000</span>
+            </li>
+            <li class="menuItem">
+              <span class="menuItem__name">Botox Capilar <em class="muted">desde</em></span>
+              <span class="menuItem__dots" aria-hidden="true"></span>
+              <span class="menuItem__price">$50.000</span>
+            </li>
+            <li class="menuItem">
+              <span class="menuItem__name">Peinados de fiesta <em class="muted">desde</em></span>
+              <span class="menuItem__dots" aria-hidden="true"></span>
+              <span class="menuItem__price">$25.000</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Cortes -->
+        <div class="menuBlock">
+          <h3 class="menuBlock__title">Cortes</h3>
+          <ul class="menuList">
+            <li class="menuItem">
+              <span class="menuItem__name">Corte de puntas</span>
+              <span class="menuItem__dots" aria-hidden="true"></span>
+              <span class="menuItem__price">$12.000</span>
+            </li>
+            <li class="menuItem">
+              <span class="menuItem__name">Corte elaborado</span>
+              <span class="menuItem__dots" aria-hidden="true"></span>
+              <span class="menuItem__price">$17.000</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Barbería -->
+        <div class="menuBlock">
+          <h3 class="menuBlock__title">Barbería</h3>
+          <ul class="menuList">
+            <li class="menuItem">
+              <span class="menuItem__name">Corte</span>
+              <span class="menuItem__dots" aria-hidden="true"></span>
+              <span class="menuItem__price">$10.000</span>
+            </li>
+            <li class="menuItem">
+              <span class="menuItem__name">Barba</span>
+              <span class="menuItem__dots" aria-hidden="true"></span>
+              <span class="menuItem__price">$10.000</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Coloración -->
+        <div class="menuBlock menuBlock--wide">
+          <h3 class="menuBlock__title">Coloración</h3>
+          <p class="note">
+            <strong>Todos los trabajos se finalizan con peinado a elección:</strong>
+            brushing, ondas o liso.
+          </p>
+
+          <ul class="menuList">
+            <li class="menuItem">
+              <span class="menuItem__name">Coloración completa</span>
+              <span class="menuItem__dots" aria-hidden="true"></span>
+              <span class="menuItem__price">$35.000</span>
+            </li>
+            <li class="menuItem">
+              <span class="menuItem__name">Cobertura de canas</span>
+              <span class="menuItem__dots" aria-hidden="true"></span>
+              <span class="menuItem__price">$30.000</span>
+            </li>
+            <li class="menuItem">
+              <span class="menuItem__name">Baño de color</span>
+              <span class="menuItem__dots" aria-hidden="true"></span>
+              <span class="menuItem__price">$25.000</span>
+            </li>
+            <li class="menuItem">
+              <span class="menuItem__name">Babylight <em class="muted">desde</em></span>
+              <span class="menuItem__dots" aria-hidden="true"></span>
+              <span class="menuItem__price">$50.000</span>
+            </li>
+            <li class="menuItem">
+              <span class="menuItem__name">Highlight <em class="muted">desde</em></span>
+              <span class="menuItem__dots" aria-hidden="true"></span>
+              <span class="menuItem__price">$60.000</span>
+            </li>
+            <li class="menuItem">
+              <span class="menuItem__name">Gorra <em class="muted">desde</em></span>
+              <span class="menuItem__dots" aria-hidden="true"></span>
+              <span class="menuItem__price">$50.000</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ctaStrip">
+        <div>
+          <h3>¿Quieres reservar?</h3>
+          <p class="muted">
+            Escríbenos por WhatsApp y te confirmamos disponibilidad.
+            <br>
+            <small>El abono asegura tu hora de atención.</small>
+          </p>
+        </div>
+
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a class="btn btn--primary"
+             href="https://wa.me/56994725308?text=Hola%20NGM%20Studio%2C%20quiero%20reservar%20una%20hora"
+             target="_blank" rel="noopener">
+            Reservar ahora
+          </a>
+
+          <button class="btn btn--ghost" id="openAbono">
+            Abono
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section class="section" id="galeria">
+    <div class="container">
+      <div class="section__head">
+        <h2>Galería</h2>
+      </div>
+
+      <div class="gallery">
+        <div class="ba">
+          <button class="ba__side ba__side--before ba__side--before-1" type="button" aria-label="Ver antes 1"></button>
+          <button class="ba__side ba__side--after  ba__side--after-1"  type="button" aria-label="Ver después 1"></button>
+        </div>
+
+        <div class="ba">
+          <button class="ba__side ba__side--before ba__side--before-2" type="button" aria-label="Ver antes 2"></button>
+          <button class="ba__side ba__side--after  ba__side--after-2"  type="button" aria-label="Ver después 2"></button>
+        </div>
+
+        <div class="ba">
+          <button class="ba__side ba__side--before ba__side--before-3" type="button" aria-label="Ver antes 3"></button>
+          <button class="ba__side ba__side--after  ba__side--after-3"  type="button" aria-label="Ver después 3"></button>
+        </div>
+
+        <div class="ba">
+          <button class="ba__side ba__side--before ba__side--before-4" type="button" aria-label="Ver antes 4"></button>
+          <button class="ba__side ba__side--after  ba__side--after-4"  type="button" aria-label="Ver después 4"></button>
+        </div>
+
+        <div class="ba">
+          <button class="ba__side ba__side--before ba__side--before-5" type="button" aria-label="Ver antes 5"></button>
+          <button class="ba__side ba__side--after  ba__side--after-5"  type="button" aria-label="Ver después 5"></button>
+        </div>
+
+        <div class="ba">
+          <button class="ba__side ba__side--before ba__side--before-6" type="button" aria-label="Ver antes 6"></button>
+          <button class="ba__side ba__side--after  ba__side--after-6"  type="button" aria-label="Ver después 6"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA DESTACADA -->
+  <section class="section section--paper" id="destacado">
+    <div class="container">
+      <div class="section__head">
+        <h2>Experiencia destacada</h2>
+        <p class="muted">Experiencia Internacional que reflejan nuestro nivel profesional.</p>
+      </div>
+
+      <div class="menuBlock destacadoBlock">
+        <p class="destacadoTitle">Modelo Valentina Ferrer</p>
+        <p class="destacadoSub">MARIE CLAIRE ARG – NY FEB 2023</p>
+
+        <p class="muted" style="margin-top:10px;">
+          New York junto a Inside Studios, en esta oportunidad en el crudo invierno del 2023 llevamos a cabo la producción
+          de la portada y editorial de moda para la edición impresa de la revista Marie Claire Argentina desde Root Studio
+          ubicado en Williambsburg.
+        </p>
+
+        <div class="featuredGrid">
+          <div class="ba ba--single">
+            <button class="ba__side ba__side--plain ba__side--feat-1" type="button" aria-label="Ver foto destacada 1"></button>
+          </div>
+
+          <div class="ba ba--single">
+            <button class="ba__side ba__side--plain ba__side--feat-2" type="button" aria-label="Ver foto destacada 2"></button>
+          </div>
+
+          <div class="ba ba--single">
+            <button class="ba__side ba__side--plain ba__side--feat-3" type="button" aria-label="Ver foto destacada 3"></button>
+          </div>
+
+          <div class="ba ba--single">
+            <button class="ba__side ba__side--plain ba__side--feat-4" type="button" aria-label="Ver revista Marie Claire"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE NATALIA (2 TARJETAS ES/EN) -->
+  <section class="section section--paper" id="sobre">
+    <div class="container">
+      <div class="section__head">
+        <h2>Sobre NGM Studio</h2>
+        <p class="muted">Estilista profesional y fundadora de NGM STUDIO.</p>
+      </div>
+
+      <div class="bioGrid">
+        <!-- ES -->
+        <article class="bioCard">
+          <h3>Estilista Profesional & Fundadora de NGM STUDIO</h3>
+
+          <p>
+            Natalia es estilista profesional desde 2014, con una trayectoria marcada por la excelencia técnica,
+            la sofisticación estética y una visión internacional del lujo aplicado a la belleza.
+          </p>
+
+          <p>
+            Su carrera se ha desarrollado en espacios de alto estándar como Peluquería Vicente Cortez y SPA Villuco,
+            donde consolidó su técnica, criterio profesional y enfoque en la experiencia personalizada.
+          </p>
+
+          <p>
+            En 2019, funda NGM STUDIO, un salón boutique de autor creado para ofrecer belleza de alto nivel, atención
+            exclusiva y resultados elegantes, siempre respetando la salud capilar.
+          </p>
+
+          <h4>Proyección Internacional</h4>
+          <p>
+            Su experiencia internacional se fortalece en New York, donde colaboró con Inside Studios en producciones
+            editoriales de moda. En febrero de 2023, formó parte de la portada y editorial de Marie Claire Argentina,
+            realizada en Root Studio, Williamsburg, estando a cargo del estilismo capilar de la modelo internacional
+            Valentina Ferrer.
+          </p>
+
+          <h4>Sello Profesional</h4>
+          <p>
+            El trabajo de Natalia se distingue por resultados atemporales, precisión técnica y un enfoque profundamente
+            personalizado, alineado con estándares comparables a salones internacionales de lujo.
+          </p>
+
+          <p class="bioEmphasis">
+            NGM STUDIO representa su visión: belleza consciente, elegancia y excelencia en cada detalle.
+          </p>
+        </article>
+
+        <!-- EN -->
+        <article class="bioCard">
+          <h3>Professional Stylist & Founder of NGM STUDIO</h3>
+
+          <p>
+            Natalia has been a professional stylist since 2014, with a career defined by technical excellence,
+            refined aesthetics, and an international vision of luxury in beauty.
+          </p>
+
+          <p>
+            Her experience was shaped in high-standard spaces such as Peluquería Vicente Cortez and SPA Villuco,
+            where she strengthened her technique, professional judgement, and a truly personalized client experience.
+          </p>
+
+          <p>
+            In 2019, she founded NGM STUDIO — a boutique, signature salon created to deliver elevated beauty,
+            exclusive attention, and elegant results, always prioritizing hair health.
+          </p>
+
+          <h4>International Projection</h4>
+          <p>
+            Her international experience grew in New York, where she collaborated with Inside Studios in fashion
+            editorial productions. In February 2023, she took part in the cover and fashion editorial for Marie Claire
+            Argentina, produced at Root Studio in Williamsburg, serving as the hair stylist for international model
+            Valentina Ferrer.
+          </p>
+
+          <h4>Professional Signature</h4>
+          <p>
+            Natalia’s work stands out for timeless results, technical precision, and a deeply personalized approach,
+            aligned with standards comparable to international luxury salons.
+          </p>
+
+          <p class="bioEmphasis">
+            NGM STUDIO reflects her vision: conscious beauty, elegance, and excellence in every detail.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEÑAS -->
+<section class="section section--paper" id="resenas">
+  <div class="container">
+    <div class="section__head">
+      <h2>Reseñas</h2>
+      <p class="muted">Experiencias reales de nuestras clientas.</p>
+    </div>
+
+    <div class="reviewsGrid">
+      <!-- Video Instagram -->
+      <article class="reviewCard">
+        <h3>Reseña</h3>
+        <p class="muted" style="margin-top:-6px;">Toca para ver el video completo.</p>
+
+        <div class="igEmbed">
+          <!-- ✅ CAMBIA ESTE LINK POR TU POST/REEL -->
+          <blockquote class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/reel/C144ktdvVv3/?igsh=MjM2N256Mzl4NDI2"
+            data-instgrm-version="14"
+            style="margin:0; width:100%;">
+          </blockquote>
+        </div>
+      </article>
+
+      <!-- Google reseñas -->
+      <article class="reviewCard">
+        <h3>Déjanos tu reseña</h3>
+
+     <p class="muted">
+  Nos encanta acompañarte en cada proceso.
+  <br>
+  Si quieres dejar tu reseña, será un apoyo importante para seguir creciendo y ofreciendo un servicio de excelencia.
+</p>
+
+        <div class="reviewActions">
+          <!-- ✅ CAMBIA ESTE LINK POR TU LINK REAL DE RESEÑAS GOOGLE -->
+          <a class="btn btn--primary"
+             href="https://www.google.com/search?q=NGM+Studio+Concepci%C3%B3n#lrd=REEMPLAZAR_CON_TU_LINK"
+             target="_blank" rel="noopener">
+            Ir a Google Reseñas
+          </a>
+
+          <a class="btn btn--ghost"
+             href="https://www.google.com/search?q=NGM+Studio+Concepci%C3%B3n"
+             target="_blank" rel="noopener">
+            Ver en Google
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Script embed Instagram (necesario para que cargue el video) -->
+<script async src="https://www.instagram.com/embed.js"></script>
+
+
+  <!-- Contacto -->
+  <section class="section section--dark" id="contacto">
+    <div class="container contactGrid">
+      <div>
+        <h2>Contacto</h2>
+        <p class="muted">Reserva, dudas o cotización. Te respondemos por WhatsApp.</p>
+
+        <div class="contactCards">
+          <a class="contactCard" href="https://wa.me/56994725308?text=Hola%20NGM%20Studio%2C%20quiero%20reservar%20una%20hora" target="_blank" rel="noopener">
+            <strong>WhatsApp</strong>
+            <span>+56 9 9472 5308</span>
+          </a>
+
+          <a class="contactCard" href="https://www.instagram.com/ngm.studio.concepcion/" target="_blank" rel="noopener">
+            <strong>Instagram</strong>
+            <span>@ngm.studio</span>
+          </a>
+
+          <div class="contactCard">
+            <strong>Dirección</strong>
+            <span>📍Cataluña #1118 Of. 414, Concepción</span>
+          </div>
+
+          <div class="contactCard">
+            <strong>Horario</strong>
+            <span>Lun–Sáb</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mapWrap" aria-label="Mapa">
+        <iframe
+          src="https://www.google.com/maps?q=Cataluña%201118%20Oficina%20414%20Concepción%20Chile&output=embed"
+          width="100%"
+          height="350"
+          style="border:0; border-radius:16px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> NGM Studio • Concepción</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose">✕</button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="Imagen ampliada">
+  </div>
+
+  <div class="abonoCard" id="abonoCard">
+    <div class="abonoCard__box">
+      <button class="abonoCard__close" id="closeAbono">✕</button>
+
+      <h3>Datos para abono</h3>
+
+      <p><strong>Banco:</strong>  Scotiabank</p>
+      <p><strong>Nombre:</strong> NATALIA ISABEL GONZALEZ</p>
+      <p><strong>RUT:</strong> 16.514.244-6</p>
+      <p><strong>Tipo de cuenta:</strong> Cuenta Corriente</p>
+      <p><strong>N° de cuenta:</strong> 979968542</p>
+      <p><strong>Correo:</strong>  NATALIA.ISABEL.GONZALEZ@HOTMAIL.COM</p>
+
+      <p class="muted" style="margin-top:10px;">
+        Enviar comprobante por WhatsApp luego del abono 💕
+      </p>
+    </div>
+  </div>
+</body>
+</html>
