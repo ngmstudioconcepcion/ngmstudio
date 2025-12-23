@@ -69,26 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeLightbox();
   });
-  // ===== ABONO CARD =====
-const openAbono = document.getElementById("openAbono");
-const abonoCard = document.getElementById("abonoCard");
-const closeAbono = document.getElementById("closeAbono");
 
-if (openAbono && abonoCard && closeAbono) {
-  openAbono.addEventListener("click", () => {
-    abonoCard.classList.add("is-open");
-  });
-
-  closeAbono.addEventListener("click", () => {
-    abonoCard.classList.remove("is-open");
-  });
-
-  abonoCard.addEventListener("click", (e) => {
-    if (e.target === abonoCard) {
-      abonoCard.classList.remove("is-open");
-    }
-  });
-}
 document.addEventListener("DOMContentLoaded", () => {
   // Año footer
   const yearEl = document.getElementById("year");
