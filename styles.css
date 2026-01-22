@@ -994,3 +994,16 @@ body{
     max-width: 520px;
   }
 }
+/* Videos: usar cards dentro de gallery sin romper el layout */
+#videos .gallery{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media (max-width: 980px){
+  #videos .gallery{
+    grid-template-columns: 1fr;
+  }
+  /* FIX navbar spacing */
+.nav a{
+  white-space: nowrap;
+}
+}
